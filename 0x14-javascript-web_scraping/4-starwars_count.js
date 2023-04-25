@@ -15,6 +15,6 @@ request.get(process.argv[2], (error, response, body) => {
         }
       });
     });
-    console.log(num);
+    console.log(count);
   }
 });
