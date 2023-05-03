@@ -1,11 +1,10 @@
-const header = $('.green');
+const header = $('header');
 const toggleDiv = $('div#toggle_header');
 
-toggleDiv.on('click', toggle(color){
-    if(header.className == "#00FF00" || "green"){
-        header.className = "red";
-    }else {
-        header.className = "green";
-    }
-}
-);
+toggleClassElement(){
+    header.toggleClass('red');
+    header.toggleClass('green');
+};
+
+toggleDiv.on('click', toggleClassElement);
+    
